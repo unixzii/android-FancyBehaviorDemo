@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:background="#fff"
+    tools:context="com.example.cyandev.androidplayground.ScrollingActivity">
+
+    <ImageView
+        android:id="@+id/scrolling_header"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/bg_header" />
+
+    <LinearLayout
+        android:id="@+id/edit_search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorInitFloatBackground"
+        app:layout_behavior="@string/header_float_behavior">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:textColor="#90000000"
+            android:text="搜索关键字" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        app:layout_behavior="@string/header_scrolling_behavior"
+        app:layoutManager="LinearLayoutManager" />
+
+</android.support.design.widget.CoordinatorLayout>

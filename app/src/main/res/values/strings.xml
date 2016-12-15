@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AndroidPlayground</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+
+    <string name="header_scrolling_behavior">com.example.cyandev.androidplayground.widget.HeaderScrollingBehavior</string>
+    <string name="header_float_behavior">com.example.cyandev.androidplayground.widget.HeaderFloatBehavior</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
